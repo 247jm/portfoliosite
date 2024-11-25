@@ -1,51 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>banner page</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>banner page</title>
 
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
+  </head>
 
-</head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // 再春館製薬リスト動的生成
+        const client01List = document.querySelector("#client01-list"); // クラスセレクタに修正
+        let client01ListNum = 5;
 
-<body>
-	<div class="banner-header">
-		<h2>banner</h2>
-		<a href="index.html">home</a>
-	</div>
-	
-	<div class="client">
-	 <h3 id="client01">再春館製薬所</h3>
-	 <div class="container">
-			 <div class="banner-box">
-				 <ul class="banner-list">
-					<li><img class="logoimg" src="sozai/banner/client01_1.jpg" alt=""></li>
+        // 初期化しておく
+        let listHTML = "";
+
+        for (var i = 0; i < client01ListNum; i++) {
+          listHTML += `<li><img class='logoimg' src='sozai/banner/client01_${
+            i + 1
+          }.jpg' alt=''></li>`;
+        }
+
+        // リストに追加
+        client01List.innerHTML = listHTML; // 1回だけ innerHTML を使って挿入
+      });
+    </script>
+
+    <div class="banner-header">
+      <h2>banner</h2>
+      <a href="index.html">home</a>
+    </div>
+
+    <div class="client">
+      <h3 id="client01">再春館製薬所</h3>
+      <div class="container">
+        <div class="banner-box">
+          <ul class="banner-list" id="client01-list">
+            <!-- <li><img class="logoimg" src="sozai/banner/client01_1.jpg" alt=""></li>
 					<li><img class="logoimg" src="sozai/banner/client01_2.jpg" alt=""></li>
 					<li><img class="logoimg" src="sozai/banner/client01_3.jpg" alt=""></li>
 					<li><img class="logoimg" src="sozai/banner/client01_4.jpg" alt=""></li>
-					<li><img class="logoimg" src="sozai/banner/client01_5.jpg" alt=""></li>
-			   </ul>
-			 </div>
-	 </div>
+					<li><img class="logoimg" src="sozai/banner/client01_5.jpg" alt=""></li> -->
+          </ul>
+        </div>
+      </div>
 
-	 <h3 id="client02">ORBIS</h3>
-	 <div class="container">
-			 <div class="banner-box">
-				 <ul class="banner-list">
-					<li><img class="logoimg" src="sozai/banner/client02_1.jpg" alt=""></li>
-					<li><img class="logoimg" src="sozai/banner/client02_2.jpg" alt=""></li>
-					<li><img class="logoimg" src="sozai/banner/client02_3.jpg" alt=""></li>
-					<li><img class="logoimg" src="sozai/banner/client02_4.jpg" alt=""></li>
-					<li><img class="logoimg" src="sozai/banner/client02_5.jpg" alt=""></li>
-					<li><img class="logoimg" src="sozai/banner/client02_6.jpg" alt=""></li>
-			   </ul>
-			 </div>
-	 </div>
-	</div>
-
-</body>
-
+      <h3 id="client02">ORBIS</h3>
+      <div class="container">
+        <div class="banner-box">
+          <ul class="banner-list">
+            <li>
+              <img class="logoimg" src="sozai/banner/client02_1.jpg" alt="" />
+            </li>
+            <li>
+              <img class="logoimg" src="sozai/banner/client02_2.jpg" alt="" />
+            </li>
+            <li>
+              <img class="logoimg" src="sozai/banner/client02_3.jpg" alt="" />
+            </li>
+            <li>
+              <img class="logoimg" src="sozai/banner/client02_4.jpg" alt="" />
+            </li>
+            <li>
+              <img class="logoimg" src="sozai/banner/client02_5.jpg" alt="" />
+            </li>
+            <li>
+              <img class="logoimg" src="sozai/banner/client02_6.jpg" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
