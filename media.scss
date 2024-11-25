@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+@function vw($width, $px) {
+
+	@return $px / $width * 100vw;
+}
+
+@media (max-width: 1100px) and (min-width: 799px) {
+  .container{
+    width: vw(1100,800);
+  }
+
+  .header{
+    align-items: flex-start;
+    a{
+      font-size: vw(1100, 22);
+    }
+    margin: vw(1100,25) 0 vw(1100,50) 0;
+  }
+
+  .banner-box{
+    margin-bottom: 75px;
+  }
+
+  .logoimg-list{
+    column-gap: vw(1100, 12);
+    img{
+      margin: 0 0 12px 0;
+      width: vw(1100, 250);
+      height: vw(1100, 250);
+    }
+  }
+
+  h1{
+    font-size: vw(1099, 25);
+  }
+
+  .brp{
+    display: block;
+  }
+
+  .nav-banner, .nav-UIdesign, .nav-illust{
+    margin-bottom: vw(1100,50);
+    li{
+      width: vw(1100, 100);
+      margin-right: vw(1100,20);
+      a{
+        font-size: vw(1100, 16);
+      }
+    }
+  }
+
+  .icon-box img{
+    width: vw(1100, 100);
+    height:  vw(1100, 100);
+  }
+
+  .icon-box, .app-img, .CD-img{
+    img{
+      margin: 0 vw(1100,25) vw(1100,25) 0;
+    }
+    p{
+      margin: vw(1100,20)  0 vw(1100,10) 0;
+      font-size: vw(1100, 18);
+    }
+  }
+
+  .app-img{
+    margin: 0%;
+    img{
+      width: vw(1100,225);
+      height: vw(1100,405);
+    }
+  }
+
+  .app-box{
+    p{
+      margin: 0 0 vw(1100,100) 0;
+      font-size: vw(1100,18);
+    }
+  }
+
+  .CD-img{
+    li img{
+      margin:0 vw(1100,25) vw(1100,20) 0;
+      &:first-child{ /*img全部に適用されちゃうのなぜ*/
+        width: 300px;
+      }
+      &:nth-child(2){
+        width: 800px;
+      }
+    }
+  }
+  
+  .CD-box, .nengajyo-box, .birthday-box, .others-box{
+    p{
+      margin:0 0 vw(1100,75) 0;
+    }
+  }
+
+  .nengajyo-img, .birthday-img, .others-img{
+    li img{
+      margin:0 vw(1100,25) vw(1100,20) 0;
+      width: vw(1100, 375);
+    }
+  }
+
+}
+
+@media (max-width: 800px) {
+  .container{
+    width: 375px;
+  }
+
+  .header{
+    a{
+      font-size: 15px;
+    }
+  }
+  
+  .icon-brp{
+    display: block;
+  }
+
+  .logoimg-list{
+    /*width: 50%;*/
+    column-gap: 10px;
+    img{
+      margin-bottom: 10px;
+      width: 180px;
+      height: 180px;
+    }
+  }
+
+  h1{
+    font-size: 15px;
+  }
+
+  .brp{
+    display: block;
+  }
+
+  .nav-banner{
+    li{
+      width: 120px;
+      a{
+        font-size: 14px;
+      }
+    }
+  }
+
+  .icon-box img{
+    width: 60px;
+    height: 60px;
+    margin: 0 25px 25px 0;
+  
+  }
+
+  .icon-box, .CD-img{
+    p{
+      font-size: 15px;
+      margin: 0 0 10px 0;
+    }
+  }
+
+  .app-box{
+    p{
+      font-size: 15px;
+      margin: 0 0 100px 0;
+    }
+  }
+
+  .app-img{
+    margin: 0%;
+    img{
+      width: 200px;
+      margin: 0 10px 10px 0;
+    }
+  }
+
+  .CD-img, .nengajyo-img, .birthday-img, .others-img{
+    li img{
+      width: 370px;
+    }
+  }
+
+  .profile-img{
+    ul{
+      li{
+        &:nth-child(2){
+          font-size: 13px;
+        }
+        &:nth-child(3),&:nth-child(4){
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+}
