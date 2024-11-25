@@ -81,13 +81,17 @@
   }
 
   .CD-img{
-    li img{
+    li {
       margin:0 vw(1100,25) vw(1100,20) 0;
       &:first-child{ /*img全部に適用されちゃうのなぜ*/
-        width: 300px;
+        img {
+          width: 300px;
+        }
       }
       &:nth-child(2){
-        width: 800px;
+        img {
+          width: 600px;
+        }
       }
     }
   }

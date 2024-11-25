@@ -28,6 +28,23 @@
 
         // リストに追加
         client01List.innerHTML = listHTML; // 1回だけ innerHTML を使って挿入
+
+ 
+			  // 再春館製薬リスト動的生成
+				const client02List = document.querySelector("#client02-list"); // クラスセレクタに修正
+        let client02ListNum = 6;
+
+        // 初期化しておく
+        let listHTML2 = "";
+
+        for (var i = 0; i < client02ListNum; i++) {
+          listHTML2 += `<li><img class='logoimg' src='sozai/banner/client02_${
+            i + 1
+          }.jpg' alt=''></li>`;
+        }
+
+        // リストに追加
+        client02List.innerHTML = listHTML2; // 1回だけ innerHTML2 を使って挿入
       });
     </script>
 
@@ -40,39 +57,14 @@
       <h3 id="client01">再春館製薬所</h3>
       <div class="container">
         <div class="banner-box">
-          <ul class="banner-list" id="client01-list">
-            <!-- <li><img class="logoimg" src="sozai/banner/client01_1.jpg" alt=""></li>
-					<li><img class="logoimg" src="sozai/banner/client01_2.jpg" alt=""></li>
-					<li><img class="logoimg" src="sozai/banner/client01_3.jpg" alt=""></li>
-					<li><img class="logoimg" src="sozai/banner/client01_4.jpg" alt=""></li>
-					<li><img class="logoimg" src="sozai/banner/client01_5.jpg" alt=""></li> -->
-          </ul>
+          <ul class="banner-list" id="client01-list"></ul>
         </div>
       </div>
 
       <h3 id="client02">ORBIS</h3>
       <div class="container">
         <div class="banner-box">
-          <ul class="banner-list">
-            <li>
-              <img class="logoimg" src="sozai/banner/client02_1.jpg" alt="" />
-            </li>
-            <li>
-              <img class="logoimg" src="sozai/banner/client02_2.jpg" alt="" />
-            </li>
-            <li>
-              <img class="logoimg" src="sozai/banner/client02_3.jpg" alt="" />
-            </li>
-            <li>
-              <img class="logoimg" src="sozai/banner/client02_4.jpg" alt="" />
-            </li>
-            <li>
-              <img class="logoimg" src="sozai/banner/client02_5.jpg" alt="" />
-            </li>
-            <li>
-              <img class="logoimg" src="sozai/banner/client02_6.jpg" alt="" />
-            </li>
-          </ul>
+          <ul class="banner-list" id="client02-list"></ul>
         </div>
       </div>
     </div>

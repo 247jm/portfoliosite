@@ -60,14 +60,15 @@
     margin: 0 0 9.0909090909vw 0;
     font-size: 1.6363636364vw;
   }
-  .CD-img li img {
+  .CD-img li {
     margin: 0 2.2727272727vw 1.8181818182vw 0;
   }
-  .CD-img li img:first-child { /*img全部に適用されちゃうのなぜ*/
+  .CD-img li:first-child { /*img全部に適用されちゃうのなぜ*/ }
+  .CD-img li:first-child img {
     width: 300px;
   }
-  .CD-img li img:nth-child(2) {
-    width: 800px;
+  .CD-img li:nth-child(2) img {
+    width: 600px;
   }
   .CD-box p, .nengajyo-box p, .birthday-box p, .others-box p {
     margin: 0 0 6.8181818182vw 0;
