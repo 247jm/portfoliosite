@@ -68,6 +68,9 @@ body {
 }
 
 .headline {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
   margin: 0%;
 }
 
@@ -99,6 +102,9 @@ body {
   margin: 0 0 50px 0;
 }
 .nav-banner li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
   width: 100px;
   text-align: center;
   border: 1px solid #000;
@@ -127,6 +133,9 @@ body {
   margin: 0 0 50px 0;
 }
 .nav-UIdesign li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
   width: 100px;
   text-align: center;
   border: 1px solid #000;
@@ -155,6 +164,9 @@ body {
   margin: 0 0 50px 0;
 }
 .nav-illust li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
   width: 100px;
   text-align: center;
   border: 1px solid #000;
