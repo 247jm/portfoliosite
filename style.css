@@ -38,6 +38,15 @@ p {
   font-size: 14px;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
