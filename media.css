@@ -1,11 +1,13 @@
 @charset "UTF-8";
 @media (max-width: 1100px) and (min-width: 799px) {
   .container {
-    width: 72.7272727273vw;
+    width: 72.72727vw;
   }
   .header {
-    align-items: flex-start;
-    margin: 2.2727272727vw 0 4.5454545455vw 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin: 2.27273vw 0 4.54545vw 0;
   }
   .header a {
     font-size: 2vw;
@@ -14,56 +16,58 @@
     margin-bottom: 75px;
   }
   .logoimg-list {
-    -moz-column-gap: 1.0909090909vw;
-         column-gap: 1.0909090909vw;
+    -webkit-column-gap: 1.09091vw;
+            column-gap: 1.09091vw;
   }
   .logoimg-list img {
     margin: 0 0 12px 0;
-    width: 22.7272727273vw;
-    height: 22.7272727273vw;
+    width: 22.72727vw;
+    height: 22.72727vw;
   }
   h1 {
-    font-size: 2.2747952684vw;
+    font-size: 2.2748vw;
   }
   .brp {
     display: block;
   }
   .nav-banner, .nav-UIdesign, .nav-illust {
-    margin-bottom: 4.5454545455vw;
+    margin-bottom: 4.54545vw;
   }
   .nav-banner li, .nav-UIdesign li, .nav-illust li {
-    width: 9.0909090909vw;
-    margin-right: 1.8181818182vw;
+    width: 9.09091vw;
+    margin-right: 1.81818vw;
   }
   .nav-banner li a, .nav-UIdesign li a, .nav-illust li a {
-    font-size: 1.4545454545vw;
+    font-size: 1.45455vw;
   }
   .icon-box img {
-    width: 9.0909090909vw;
-    height: 9.0909090909vw;
+    width: 9.09091vw;
+    height: 9.09091vw;
   }
   .icon-box img, .app-img img, .CD-img img {
-    margin: 0 2.2727272727vw 2.2727272727vw 0;
+    margin: 0 2.27273vw 2.27273vw 0;
   }
   .icon-box p, .app-img p, .CD-img p {
-    margin: 1.8181818182vw 0 0.9090909091vw 0;
-    font-size: 1.6363636364vw;
+    margin: 1.81818vw 0 0.90909vw 0;
+    font-size: 1.63636vw;
   }
   .app-img {
     margin: 0%;
   }
   .app-img img {
-    width: 20.4545454545vw;
-    height: 36.8181818182vw;
+    width: 20.45455vw;
+    height: 36.81818vw;
   }
   .app-box p {
-    margin: 0 0 9.0909090909vw 0;
-    font-size: 1.6363636364vw;
+    margin: 0 0 9.09091vw 0;
+    font-size: 1.63636vw;
   }
   .CD-img li {
-    margin: 0 2.2727272727vw 1.8181818182vw 0;
+    margin: 0 2.27273vw 1.81818vw 0;
   }
-  .CD-img li:first-child { /*img全部に適用されちゃうのなぜ*/ }
+  .CD-img li:first-child {
+    /*img全部に適用されちゃうのなぜ*/
+  }
   .CD-img li:first-child img {
     width: 300px;
   }
@@ -71,13 +75,14 @@
     width: 600px;
   }
   .CD-box p, .nengajyo-box p, .birthday-box p, .others-box p {
-    margin: 0 0 6.8181818182vw 0;
+    margin: 0 0 6.81818vw 0;
   }
   .nengajyo-img li img, .birthday-img li img, .others-img li img {
-    margin: 0 2.2727272727vw 1.8181818182vw 0;
-    width: 34.0909090909vw;
+    margin: 0 2.27273vw 1.81818vw 0;
+    width: 34.09091vw;
   }
 }
+
 @media (max-width: 800px) {
   .container {
     width: 375px;
@@ -90,8 +95,8 @@
   }
   .logoimg-list {
     /*width: 50%;*/
-    -moz-column-gap: 10px;
-         column-gap: 10px;
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
   }
   .logoimg-list img {
     margin-bottom: 10px;
@@ -139,4 +144,5 @@
   .profile-img ul li:nth-child(3), .profile-img ul li:nth-child(4) {
     font-size: 13px;
   }
-}/*# sourceMappingURL=media.css.map */
+}
+/*# sourceMappingURL=media.css.map */
