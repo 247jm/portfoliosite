@@ -8,42 +8,33 @@
 
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="media.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  　　　　　　　　　　　　<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-	
+	<link rel="stylesheet" href="script.js">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 	<div class="container">
     <div class="header">
-      <h1 class="headline">Mao Taniguchi<br class="brp"> Portfolio site</h1>
-      <a href="#profile">profile</a>
+      <h1 class="headline" id="home">谷口 真緒<br class="brp">　ポートフォリオサイト</h1>
+      <a href="#profile">自己紹介</a>
     </div>
 
 		<div class="nav-box" id="banner">
 			<div class="nav">
 				<ul class="nav-banner">
-					<li><a href="#banner">banner</a></li>
-					<li><a href="#UIdesign">UI design</a></li>
-					<li><a href="#illust">illust</a></li>
+					<li><a href="#banner">バナー</a></li>
+					<li><a href="#UIdesign">UI デザイン</a></li>
+					<li><a href="#illust">イラスト</a></li>
 				</ul>
+				<!-- <h2 class="nav-title">banner</h2> -->
 			</div>
 		</div>
 
 		<div class="banner-box">
-			<h2 class="nav-title">banner</h2>
 			<div class="logoimg-box">
 				<ul class="logoimg-list">
 					<li><a href="banner.html#client01"><img class="logoimg" src="sozai/logo/logo_01_saishunkan.jpg" alt=""></a></li>
@@ -65,15 +56,15 @@
 		<div class="nav-box" id="UIdesign">
 			<div class="nav">
 				<ul class="nav-UIdesign">
-					<li><a href="#banner">banner</a></li>
-					<li><a href="#UIdesign">UI design</a></li>
-					<li><a href="#illust">illust</a></li>
+					<li><a href="#banner">バナー</a></li>
+					<li><a href="#UIdesign">UI デザイン</a></li>
+					<li><a href="#illust">イラスト</a></li>
 				</ul>
 			</div>
 		</div>
 
 		<div class="UIdesign-box">
-			<h2 class="nav-title">UIdesign</h2>
+			<!-- <h2 class="nav-title">UIdesign</h2> -->
 			<div class="icon-box">
 				<img class="icon-img" src="sozai/minchare/minchare_logo.jpg" alt="">
 				<p>習慣化アプリ みんチャレ<br />習慣化で目標達成<br class="icon-brp">～ダイエットや禁酒・禁煙を継続</p>
@@ -85,43 +76,55 @@
 					<li><img src="sozai/minchare/minnchare_02.png" alt=""></li>
 					<li><img src="sozai/minchare/minnchare_03.png" alt=""></li>
 				</ul>
-				<p>制作内容<br />
-				アプリのUIが改善されるにあたり、使い方や活用方法を紹介しているみんチャレブログというサイトで、例として使用されるアプリ画面の内容を修正。<br />
-					Design Tools : XD</p>
+				<div class="coment">
+					<p class="txt">制作内容 : アプリのUIが改善されるにあたり、使い方や活用方法を紹介している
+					<br />みんチャレブログというサイトで、例として使用されるアプリ画面の内容を約50画面修正しました。
+					<br /><br />デザインツール : Adobe XD</p>
+				
+				 <!-- <div class="tools">
+					 <p>Design Tools : Adobe XD</p>
+				   <img src="sozai/icon/xd_5611129.png" alt="">
+				 </div> -->
+
+				</div>
+			
 			</div>
 		</div>
 
 		<div class="nav-box" id="illust">
 			<div class="nav">
 				<ul class="nav-illust">
-					<li><a href="#banner">banner</a></li>
-					<li><a href="#UIdesign">UI design</a></li>
-					<li><a href="#illust">illust</a></li>
+					<li><a href="#banner">バナー</a></li>
+					<li><a href="#UIdesign">UI デザイン</a></li>
+					<li><a href="#illust">イラスト</a></li>
 				</ul>
 			</div>
 		</div>
 
 		<div class="illust-box">
-			<h2 class="nav-title">illust</h2>
+			<!-- <h2 class="nav-title">illust</h2> -->
 			<div class="CD-box">
 				<ul class="CD-img">
-					<li><img src="sozai/illust/CD_00.jpg" alt=""></li>
+					<!-- <li><img src="sozai/illust/CD_00.jpg" alt=""></li> -->
 					<li><img src="sozai/illust/CD_01.jpg" alt=""></li>
 					<li><img src="sozai/illust/CD_02.jpg" alt=""></li>
 				</ul>
-				<p>CDジャケット<br />
-				  Every Little ThingのスイミーというシングルCDジャケットを自作。<br />
-					Design Tools : Illustrator、Photoshop</p>
+				<div class="coment">
+					<p class="txt">制作内容 : 自主制作でCDジャケットを制作しました。水彩絵の具やパステルを使ってイラストを描き、印刷後CDケースに入れました。
+				 <br /><br />デザインツール : Adobe Photoshop , Adobe Illustrator</p>
+				</div>
 			</div>
 
 			<div class="nengajyo-box">
 				<ul class="nengajyo-img">
 					<li><img src="sozai/illust/2021年賀状.jpg" alt=""></li>
 					<li><img src="sozai/illust/2022年賀状.jpg" alt=""></li>
-					<li><img src="sozai/illust/2024年賀状.jpg" alt=""></li>
 				</ul>
-				<p>年賀状<br />
-				  Design Tools : Illustrator、Photoshop</p>
+				<div class="coment">
+					<p class="txt">制作内容 : 鳥山明さん風に描いたものや、オリジナルのキャラクターで描いたイラストを元に、Adobe Photoshopで色をつけ年賀状を制作しました。
+				 <br /> <br />デザインツール : Adobe Photoshop</p>
+				</div>
+
 			</div>
 
 			<div class="birthday-box">
@@ -129,32 +132,42 @@
 					<li><img src="sozai/illust/skateboard.jpg" alt=""></li>
 					<li><img src="sozai/illust/mama210802.jpg" alt=""></li>
 				</ul>
-				<p>バースデーカード<br />
-				  Design Tools : Illustrator、Photoshop</p>
+				<div class="coment">
+					<p class="txt">制作内容 : 手書きでイラストを描いてバースデーカードなどをプレゼントすることが多いです。
+				 <br /><br />デザインツール : Adobe Photoshop , Adobe Illustrator</p>
+				</div>
 			</div>
 
 			<div class="others-box">
 				<ul class="others-img">
 					<li><img src="sozai/illust/シミ.jpg" alt=""></li>
 				</ul>
-				<p>LP内に使用するシミのイメージ<br />
-				  Design Tools : Illustrator、Photoshop</p>
+				<div class="coment">
+					<p class="txt">制作内容 : 自主制作でLP内に使用するシミのイメージ画像を制作しました。
+				 <br /><br />デザインツール : Adobe Photoshop , Adobe Illustrator</p>
+				</div>
+
 			</div>
 
 		</div>
 
 		<div class="profile-box">
-			<p id="profile">profile</p>
+
+			<div class="name-box">
+			  <p class="namae" id="profile">谷口 真緒</p>
+			  <p class="name">Mao Taniguchi</p>
+			</div>
+
 			<div class="profile-img">
-			 <img src="sozai/profile.jpg" alt="">
-			 <ul>
-				 <li>Mao Taniguchi</li>
-				 <li>2019年<br class="prof-brp">事務職の一環として、PhotoshopやIllustratorを用いて写真加工・POP広告等を作成。<br />		
-				     2020年<br class="prof-brp">Webデザインを学び始める。<br />
-				     2022年<br class="prof-brp">株式会社GENBA様よりバナーデザインの依頼を受ける。<br /></li>
-				 <li>skill<br class="prof-brp">Photoshop、Illustrator、XD、Aftereffect、 Premierepro、html、css、figma</li>
-				 <li>contact<br class="prof-brp">mail:maotaniguchi77@gmail.com <br class="prof-brp">℡ : 09039747724</li>
-			 </ul>
+				<img src="sozai/profile.jpg" alt="">
+			  <ul>
+				  <li><p>ヒストリー : </p></li>
+				  <li><p>2019<br class="prof-brp">事務職の一環として写真撮影や、Photoshop・Illustratorを用いての写真加工・POP広告・プライスカード・カタログ等を制作。<br />		
+				         2020<br class="prof-brp">デザインを学び始める。<br />
+				         2022<br class="prof-brp">株式会社GENBA様やneru様よりバナーデザインやUIデザインの依頼を受け、制作する。<br /></p></li>
+				  <li><br><p>スキル : Photoshop、Illustrator、XD、Aftereffect、Premierepro、html、css、figma</p></li>
+				  <li><br><p>コンタクト : </p><p class="contact-icon">mail</p><p>maotaniguchi77@gmail.com　</p><p class="contact-icon">tel</p><p>09039747724</p></li>
+			  </ul>
       </div>
 		</div>
 
