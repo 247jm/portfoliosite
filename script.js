@@ -76,9 +76,15 @@ document.addEventListener("DOMContentLoaded", function () {
   let listHTML5 = "";
 
   for (var i = 0; i < client05ListNum; i++) {
-    listHTML5 += `<li><img class='logoimg' src='sozai/banner/client05_${
-      i + 1
-    }.jpg' alt=''></li>`;
+    if(i+1 < 33) {
+      listHTML5 += `<li><img class='logoimg' src='sozai/banner/client05_${
+        i + 1
+      }.jpg' alt=''></li>`;
+    } else {
+      listHTML5 += `<li><video controls src='sozai/banner/client05_${
+        i + 1
+      }.mp4'></video></li>`;
+    }
   }
 
   // リストに追加
