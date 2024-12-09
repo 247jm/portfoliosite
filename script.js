@@ -150,9 +150,15 @@ document.addEventListener("DOMContentLoaded", function () {
   let listHTML9 = "";
 
   for (var i = 0; i < client09ListNum; i++) {
-    listHTML9 += `<li><img class='logoimg' src='sozai/banner/client09_${
-      i + 1
-    }.jpg' alt=''></li>`;
+    if(i+1 < 11) {
+      listHTML9 += `<li><img class='logoimg' src='sozai/banner/client09_${
+        i + 1
+      }.jpg' alt=''></li>`;
+    } else {
+      listHTML9 += `<li><video controls src='sozai/banner/client09_${
+        i + 1
+      }.mp4'></li>`;
+    }
   }
 
   // リストに追加
