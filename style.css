@@ -1,10 +1,13 @@
 @charset "UTF-8";
 html {
   scroll-padding-top: 100px;
+  scroll-behavior: smooth;
 }
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
@@ -19,7 +22,6 @@ body {
   height: 100%;
   width: 100%;
   margin-inline: auto;
-  display: -ms-grid;
   display: grid;
   place-content: center;
   padding: 0;
@@ -29,132 +31,73 @@ body {
 
 .container {
   text-align: left;
-  width: 1100px;
+  width: 1083px;
   margin-inline: auto;
 }
 
-p {
+p, li {
   font-family: "Noto Sans JP", serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 14px;
+  line-height: 22px;
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
-
 a:visited {
   color: inherit;
 }
 
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.pagetop {
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  background: #fff;
+  border: solid 1px #000;
+  border-radius: 50%;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0%;
-  margin: 50px 0 0 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
 }
 
-.header h1 {
-  font-family: 'Osaka-Mono';
-  font-size: 22px;
-  font-weight: normal;
-  padding: 0;
-  margin: 0;
-}
-
-.header a {
-  text-decoration: none;
-  font-family: 'Osaka-Mono';
-  font-size: 18px;
-  margin: 5px 0 0 0;
-  position: relative;
-}
-
-.header a::after {
-  background-color: #6060d2;
-  /* 下線の色 */
-  bottom: -2px;
-  /* 要素の下端からの距離 */
-  content: "";
-  /* 要素に内容を追加 */
-  height: 2px;
-  /* 下線の高さ */
-  left: 0;
-  /* 要素の左端からの距離 */
-  position: absolute;
-  /* 絶対位置指定 */
-  -webkit-transform: scale(0, 1);
-          transform: scale(0, 1);
-  /* 下線を横方向に0倍、縦方向に1倍に変形（非表示） */
-  -webkit-transform-origin: left top;
-          transform-origin: left top;
-  /* 変形の原点を左上に指定 */
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
-  /* 変形をアニメーション化 */
-  width: 98%;
-  /* 要素の幅 */
-}
-
-.header a:hover::after {
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
-  /* 下線を横方向に1倍、縦方向に1倍に変形（表示） */
-}
-
-.header a:visited {
-  color: inherit;
-}
-
-.client {
-  margin-top: 100px;
-}
-
-.banner-box {
-  margin-bottom: 75px;
+.pagetop__arrow {
+  height: 10px;
+  width: 10px;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  transform: translateY(20%) rotate(-45deg);
 }
 
 .logoimg-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-column-gap: 25px;
-          column-gap: 25px;
+  flex-wrap: wrap;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
   padding: 0%;
   margin-inline: auto;
 }
-
-.logoimg-list img {
-  border: solid 1px #777777;
-  margin: 0 0 25px 0;
+.logoimg-list li {
+  border: solid 1px #cccccc;
+  margin-bottom: 25px;
   width: 250px;
   height: 250px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  overflow: hidden;
 }
-
+.logoimg-list img {
+  margin: 0 0 0 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 .logoimg-list img:hover {
   opacity: 0.4;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .nav-box {
@@ -162,47 +105,39 @@ a:visited {
 }
 
 .nav-banner, .nav-illust, .nav-UIdesign {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 0%;
   margin: 0 0 50px 0;
 }
-
 .nav-banner li, .nav-illust li, .nav-UIdesign li {
-  font-family: 'Osaka-Mono';
-  font-size: 14px;
   text-align: center;
   border: 1px solid #000;
   margin: 0 25px 0 0;
   padding: 2px 6px;
 }
-
 .nav-banner li a, .nav-illust li a, .nav-UIdesign li a {
   text-decoration: none;
 }
-
 .nav-banner li :visited, .nav-illust li :visited, .nav-UIdesign li :visited {
   color: black;
 }
-
 .nav-banner li :hover, .nav-illust li :hover, .nav-UIdesign li :hover {
   color: black;
-  color: #6060d2;
+  color: rgb(96, 96, 210);
 }
 
 .nav-banner li:first-child {
-  background-color: #ffea00;
+  background-color: rgb(255, 234, 0);
   color: black;
 }
 
 .nav-UIdesign li:nth-child(2) {
-  background-color: #ffea00;
+  background-color: rgb(255, 234, 0);
   color: black;
 }
 
 .nav-illust li:nth-child(3) {
-  background-color: #ffea00;
+  background-color: rgb(255, 234, 0);
   color: black;
 }
 
@@ -218,75 +153,65 @@ a:visited {
 }
 
 .app-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin: 0%;
   padding: 0%;
 }
-
 .app-img img {
   width: 252px;
   height: auto;
   margin: 0 25px 50px 0;
 }
-
 .app-img li:nth-child(3) img {
   margin: 0 0 50px 0;
 }
-
 .app-img p {
   margin: 0 auto;
   font-size: 20px;
 }
 
 .icon-box, .CD-img, .nengajyo-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
   width: 806px;
   margin: 0 auto;
   margin-bottom: 50px;
   padding: 0%;
 }
-
 .icon-box img, .CD-img img, .nengajyo-img img {
   margin: 0 25px 0 0;
 }
-
 .icon-box p, .CD-img p, .nengajyo-img p {
   font-size: 16px;
   line-height: 28px;
 }
 
 .app-img {
-  margin: -25px 0 0 0;
+  margin: 0;
 }
 
 .app-box h3 {
   margin: -25px 0 10px 0;
 }
-
 .app-box p {
   margin: -25px 0 0 0;
 }
 
 .coment {
-  width: 806px;
-  margin: 0 auto;
+  display: flex;
+  margin: 50px 0;
+}
+
+.fontsize18 {
+  font-size: 18px;
+}
+
+.fontsize12 {
+  font-size: 12px;
 }
 
 .txt {
@@ -304,12 +229,10 @@ a:visited {
 .CD-img {
   margin-bottom: 0;
 }
-
 .CD-img li:first-child img {
   width: 525px;
   height: auto;
 }
-
 .CD-img li:nth-child(2) img {
   width: auto;
   height: 399px;
@@ -319,53 +242,38 @@ a:visited {
 .CD-box, .nengajyo-box, .birthday-box, .others-box {
   margin: 0 0 100px 0;
 }
-
 .CD-box h3, .nengajyo-box h3, .birthday-box h3, .others-box h3 {
   margin: 0;
 }
 
 .birthday-img, .others-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0%;
   padding: 0%;
 }
-
 .birthday-img li img, .others-img li img {
   width: 390px;
   margin: 0 0 25px 0;
 }
-
 .birthday-img li:first-child img, .others-img li:first-child img {
   margin-right: 25px;
 }
 
 .nengajyo-img {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0 auto;
   width: 806px;
   padding: 0%;
 }
-
 .nengajyo-img li img {
   width: 252px;
   height: auto;
   margin: 0 25px 20px 0;
 }
-
 .nengajyo-img li:nth-child(2) img {
   margin-right: 0;
 }
@@ -374,79 +282,115 @@ a:visited {
   text-align: center;
   margin-top: 150px;
 }
-
 .profile-box img {
-  width: 806px;
+  width: 529px;
   height: auto;
   margin: 0;
 }
 
 .name-box {
-  width: 806px;
+  width: 529px;
   margin: 0 auto;
 }
 
 .namae {
-  text-align: left;
+  text-align: center;
   font-size: 28px;
   margin: 0;
 }
 
 .name {
-  text-align: left;
+  text-align: center;
   margin: 20px 0 50px 0;
 }
 
 .profile-img {
-  width: 806px;
-  margin: 0 auto;
+  width: 529px;
   padding: 0%;
+  margin: 0 auto;
 }
-
-.profile-img li:nth-child(2) {
-  line-height: 28px;
-}
-
-.profile-img li:nth-child(4) p {
-  display: inline-block;
-}
-
 .profile-img ul {
   display: inline-block;
   text-align: left;
-  margin: 0 0 50px 0;
-  padding: 0%;
-  width: 806px;
+  margin: 0;
+  padding: 0;
+  width: 529px;
+}
+
+.history-box, .skil-box, .contact-box, .history-left {
+  display: flex;
+  width: 529px;
+  margin-bottom: 75px;
+}
+
+.kaigyou {
+  display: block;
+  content: "";
+}
+
+.history-left, .skil-left, .contact-left {
+  display: flex;
+  width: 100px;
+}
+
+.history-center, .contact-center {
+  display: flex;
+  width: 55px;
+  margin: 0 5px;
+}
+.history-center .kaigyou, .contact-center .kaigyou {
+  height: 30px;
+}
+
+.contact-center li {
+  text-align: center;
+}
+
+.history-right, .contact-right {
+  display: flex;
+  width: 474px;
+}
+
+.skil-right {
+  display: flex;
+  width: 529px;
+  padding-left: 12px;
+}
+
+.aida {
+  margin-bottom: 4px;
 }
 
 .contact-icon {
   border: 1px solid #000;
-  margin: 0 10px;
-  padding: 0 2px;
   color: #CCC;
   background-color: #000;
 }
 
 footer p {
   font-size: 10px;
-  font-family: 'Osaka-Mono';
+  font-family: "Osaka-Mono";
   margin: 100px 0 0 0;
   line-height: 1px;
 }
 
 /*↓banner.htmlのcss*/
+.client {
+  margin-top: 100px;
+}
+
+.banner-box {
+  margin: 100px 0 0 0;
+}
+
 .banner-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-column-gap: 25px;
-          column-gap: 25px;
+  flex-wrap: wrap;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
   padding: 0%;
   margin-inline: auto;
 }
-
 .banner-list img {
   margin: 0;
   width: 100%;
@@ -455,96 +399,98 @@ footer p {
      object-fit: contain;
 }
 
-ul#client01-list li, ul#client02-list li {
-  border: solid 1px #777777;
+ul#client01-list li, ul#client02-list li, ul#client03-list li, ul#client04-list li, ul#client05-list li, ul#client06-list li, ul#client07-list li, ul#client08-list li, ul#client09-list li, ul#client10-list li, ul#client11-list li, ul#client12-list li, ul#client13-list li, ul#client15-list li, ul#client16-list li {
+  border: solid 1px #cccccc;
   margin-bottom: 25px;
   width: 250px;
   height: 250px;
 }
 
-.banner-header {
+.fixed-area {
   position: fixed;
-  width: 100%;
-  height: 60px;
-  padding: 20px 60px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-color: white;
+  box-sizing: border-box;
   top: 0;
   left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0%;
+  background-color: white;
+  width: 100%;
 }
 
+.banner-header-box {
+  width: 1083px;
+  margin: 0 auto;
+}
+
+.banner-header {
+  height: 60px;
+  padding: 20px 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0%;
+}
 .banner-header a {
   text-decoration: none;
 }
-
 .banner-header a:visited {
   color: inherit;
 }
-
-.banner-header h1 {
-  font-family: 'Osaka-Mono';
-  font-size: 22px;
-  font-weight: normal;
-  padding: 0;
+.banner-header p {
   margin: 0;
+  padding: 0;
 }
-
 .banner-header .banner-profile {
   text-decoration: none;
-  font-family: 'Osaka-Mono';
-  font-size: 18px;
+  font-family: "Noto Sans JP", serif;
   margin: 5px 0 0 0;
   position: relative;
 }
-
-.banner-header .banner-profile::after {
-  background-color: #6060d2;
-  /* 下線の色 */
-  bottom: -2px;
-  /* 要素の下端からの距離 */
-  content: "";
-  /* 要素に内容を追加 */
-  height: 2px;
-  /* 下線の高さ */
-  left: 0;
-  /* 要素の左端からの距離 */
-  position: absolute;
-  /* 絶対位置指定 */
-  -webkit-transform: scale(0, 1);
-          transform: scale(0, 1);
-  /* 下線を横方向に0倍、縦方向に1倍に変形（非表示） */
-  -webkit-transform-origin: left top;
-          transform-origin: left top;
-  /* 変形の原点を左上に指定 */
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
-  /* 変形をアニメーション化 */
-  width: 98%;
-  /* 要素の幅 */
+.banner-header .banner-profile :hover {
+  color: black;
+  color: rgb(96, 96, 210);
 }
-
-.banner-header .banner-profile:hover::after {
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
-  /* 下線を横方向に1倍、縦方向に1倍に変形（表示） */
-}
-
 .banner-header .banner-profile:visited {
   color: inherit;
 }
-/*# sourceMappingURL=style.css.map */
+
+.client-container {
+  margin: 150px 0;
+}
+
+.production {
+  width: 252px;
+  margin: 0 27px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.production-content {
+  width: 528px;
+  padding: 0;
+}
+
+.client-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.client-top .product {
+  font-size: 18px;
+  margin-left: 10px;
+  border-left: 1px solid #cccccc;
+  padding-left: 10px;
+}
+.client-top .tag {
+  border: 1px solid #cccccc;
+  color: #000;
+  background-color: #fff;
+  margin-left: 20px;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 0 4px 0 5px;
+}
+
+.time-skill {
+  overflow-wrap: break-word;
+  width: 182px;
+}/*# sourceMappingURL=style.css.map */
