@@ -6,199 +6,303 @@
 }
 
 @media (max-width: 1100px) and (min-width: 799px) {
-  .container{
+  .container, .header-box{
     width: vw(1100,800);
   }
 
   .header{
-    align-items: flex-start;
+    // align-items: flex-start;
     a{
       font-size: vw(1100, 22);
     }
-    margin: vw(1100,25) 0 vw(1100,50) 0;
+    // margin: vw(1100,25) 0 vw(1100,50) 0;
   }
 
   .banner-box{
     margin-bottom: 75px;
   }
 
-  .logoimg-list{
-    column-gap: vw(1100, 12);
+  .logoimg-list, .banner-list{
+    column-gap: vw(1100, 25);
     li{
-      margin: 0 0 12px 0;
-      width: vw(1100, 250);
-      height: vw(1100, 250);
+      margin-bottom: vw(1100, 25);
+      width: vw(1100, 247);
+      height: vw(1100, 247);
     }
   }
 
-  h1{
-    font-size: vw(1099, 25);
+  ul#client01-list li,ul#client02-list li,ul#client03-list li,ul#client04-list li,ul#client05-list li,ul#client06-list li,ul#client07-list li,ul#client08-list li,ul#client09-list li,ul#client10-list li,ul#client11-list li,ul#client12-list li,ul#client13-list li,ul#client15-list li,ul#client16-list li{
+    margin-bottom: vw(1100, 25);
+    width: vw(1100, 247);
+    height: vw(1100, 247);
   }
+
+  // h1{
+  //   font-size: vw(1099, 25);
+  // }
 
   .brp{
     display: block;
   }
 
-  .nav-banner, .nav-UIdesign, .nav-illust{
-    margin-bottom: vw(1100,50);
-    li{
-      width: vw(1100, 100);
-      margin-right: vw(1100,20);
-      a{
-        font-size: vw(1100, 16);
-      }
-    }
-  }
+  // .nav-banner, .nav-UIdesign, .nav-illust{
+  //   margin-bottom: vw(1100,50);
+  //   li{
+  //     width: vw(1100, 100);
+  //     margin-right: vw(1100,20);
+  //     a{
+  //       font-size: vw(1100, 16);
+  //     }
+  //   }
+  // }
 
-  .icon-box img{
-    width: vw(1100, 100);
-    height:  vw(1100, 100);
-  }
+  // .icon-box img{
+  //   width: vw(1100, 100);
+  //   height:  vw(1100, 100);
+  // }
 
   .icon-box, .app-img, .CD-img{
     img{
       margin: 0 vw(1100,25) vw(1100,25) 0;
     }
-    p{
-      margin: vw(1100,20)  0 vw(1100,10) 0;
-      font-size: vw(1100, 18);
-    }
+    // p{
+    //   margin: vw(1100,20)  0 vw(1100,10) 0;
+    //   font-size: vw(1100, 18);
+    // }
+  }
+
+  .app-img-box{
+    margin: 0 auto;
   }
 
   .app-img{
-    margin: 0%;
+    margin: 0 auto;
     img{
       width: vw(1100,225);
-      height: vw(1100,405);
+      // height: vw(1100,405);
+    }
+    li{
+      &:nth-child(3){
+       img{
+         margin-right: 0;
+       }
+      }
     }
   }
 
-  .app-box{
-    p{
-      margin: 0 0 vw(1100,100) 0;
-      font-size: vw(1100,18);
-    }
-  }
+  // .app-box{
+  //   p{
+  //     margin: 0 0 vw(1100,100) 0;
+  //     font-size: vw(1100,18);
+  //   }
+  // }
 
   .CD-img{
     li{
-      margin:0 vw(1100,25) vw(1100,20) 0;
+      // margin:0 vw(1100,25) vw(1100,20) 0;
       &:first-child{ /*img全部に適用されちゃうのなぜ*/
         img{
-          width: 300px;
+          width: vw(1100,525);
         }
       }
       &:nth-child(2){
         img{
-          width: 600px;
+          height: vw(1100,399);
         }
       }
+      // &:nth-child(2){
+      //   img{
+      //     width: 600px;
+      //   }
+      // }
     }
   }
 
-  .CD-box, .nengajyo-box, .birthday-box, .others-box{
-    p{
-      margin:0 0 vw(1100,75) 0;
+  // .CD-box, .nengajyo-box, .birthday-box, .others-box{
+  //   p{
+  //     margin:0 0 vw(1100,75) 0;
+  //   }
+  // }
+
+  .nengajyo-img{
+    li{
+      img{
+        width: vw(1100,252);
+      }
+    }
+  }
+  
+  .birthday-img, .others-img{
+    li{
+     img{
+      width: vw(1100,375);
+     }
     }
   }
 
   .nengajyo-img, .birthday-img, .others-img{
     li img{
       margin:0 vw(1100,25) vw(1100,20) 0;
-      width: vw(1100, 375);
     }
   }
 
 }
 
 @media (max-width: 800px) {
-  .container{
-    width: 375px;
+  .container, .header-box{
+    width: 350px;
   }
 
   .header{
     a{
-      font-size: 15px;
+      font-size: 14px;
     }
   }
   
-  .icon-brp{
-    display: block;
+  .fontsize18{
+    margin: 5px 0;
   }
 
-  .logoimg-list{
-    /*width: 50%;*/
+  
+
+  .client {
+    margin-top: 50px;
+  }
+
+  .client-container {
+    margin: 100px 0;
+  }
+
+  .client-top{
+    // display: flex;
+    // flex-wrap: wrap;
+    // align-items: center;
+    .product{
+      // font-size: 18px;
+      // margin-left: 3px;
+      margin: 5px 0 5px 3px;
+      // border-left:1px solid #cccccc;
+      // padding-left: 10px;
+    }
+    // .tag{
+    //   border: 1px solid #cccccc;
+    //   color: #000;
+    //   background-color: #fff;
+    //   margin-left: 20px;
+    //   font-size: 12px;
+    //   line-height: 20px;
+    //   padding: 0 4px 0 5px;
+    // }
+  }
+
+  .logoimg-list, .banner-list{
+    // justify-content: center;
     column-gap: 10px;
-    img{
+    li{
+      width: 168px;
+      height: 168px;
       margin-bottom: 10px;
-      width: 180px;
-      height: 180px;
     }
   }
 
-  h1{
-    font-size: 15px;
+  ul#client01-list li,ul#client02-list li,ul#client03-list li,ul#client04-list li,ul#client05-list li,ul#client06-list li,ul#client07-list li,ul#client08-list li,ul#client09-list li,ul#client10-list li,ul#client11-list li,ul#client12-list li,ul#client13-list li,ul#client15-list li,ul#client16-list li{
+    width: 168px;
+    height: 168px;
+    margin-bottom: 10px;
   }
+
+  .coment{
+    display: block;
+    margin: 25px 0;
+  }
+
+  .production {
+    width: 350px;
+    margin-right: 10px;
+  }
+
+  .production-content {
+    width: 350px;
+}
 
   .brp{
     display: block;
   }
 
-  .nav-banner{
-    li{
-      width: 120px;
-      a{
-        font-size: 14px;
-      }
-    }
+  .name-box, .profile-img, .profile-box img, .history-box, .skil-box, .contact-box,.skil-center, .profile-img ul{
+    width: 100%;
   }
 
-  .icon-box img{
-    width: 60px;
-    height: 60px;
-    margin: 0 25px 25px 0;
-  
+  .history-right, .contact-right{
+    width: 310px;
   }
 
-  .icon-box, .CD-img{
-    p{
-      font-size: 15px;
-      margin: 0 0 10px 0;
-    }
-  }
 
-  .app-box{
-    p{
-      font-size: 15px;
-      margin: 0 0 100px 0;
-    }
-  }
+  // .icon-box, .CD-img{
+  //   p{
+  //     font-size: 15px;
+  //     margin: 0 0 10px 0;
+  //   }
+  // }
+
+  // .app-box{
+  //   p{
+  //     font-size: 15px;
+  //     margin: 0 0 100px 0;
+  //   }
+  // }
 
   .app-img{
     margin: 0%;
     img{
-      width: 200px;
+      width: 150px;
       margin: 0 10px 10px 0;
     }
-  }
-
-  .CD-img, .nengajyo-img, .birthday-img, .others-img{
-    li img{
-      width: 370px;
+    li{
+      &:nth-child(4){
+       img{
+        margin: 0 10px 10px 0;
+       }
+      }
     }
   }
 
-  .profile-img{
-    ul{
-      li{
-        &:nth-child(2){
-          font-size: 13px;
-        }
-        &:nth-child(3),&:nth-child(4){
-          font-size: 13px;
+  // .CD-img, .nengajyo-img, .birthday-img, .others-img{
+  //   li img{
+  //     width: 370px;
+  //   }
+  // }
+
+  .CD-img{
+    li{
+      &:first-child{ /*img全部に適用されちゃうのなぜ*/
+        img{
+          width: 365px;
         }
       }
     }
   }
+
+  .nengajyo-img{
+    li{
+      img{
+        width: 245px;
+      }
+      &:first-child{ /*img全部に適用されちゃうのなぜ*/
+        img{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  
+  .birthday-img, .others-img{
+    li{
+     img{
+      width: 365px;
+     }
+    }
+  }
+
 
 }
