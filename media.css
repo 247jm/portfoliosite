@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @media (max-width: 1100px) and (min-width: 799px) {
   .container, .header-box {
     width: 72.7272727273vw;
@@ -41,7 +40,6 @@
   .app-img li:nth-child(3) img {
     margin-right: 0;
   }
-  .CD-img li:first-child { /*img全部に適用されちゃうのなぜ*/ }
   .CD-img li:first-child img {
     width: 47.7272727273vw;
   }
@@ -67,6 +65,39 @@
   }
   .fontsize18 {
     margin: 5px 0;
+    font-size: 14px;
+  }
+  .header-profile p {
+    font-size: 11px;
+  }
+  .pagetop {
+    right: 24px;
+    bottom: 24px;
+    height: 45px;
+    width: 45px;
+  }
+  .profile-box {
+    margin-top: 50px;
+  }
+  .profile-img img {
+    margin-bottom: 15px;
+  }
+  .profile-img p {
+    font-size: 11px;
+  }
+  .profile-img .history-box, .profile-img .skil-box, .profile-img .contact-box {
+    margin-bottom: 25px;
+    margin-top: -10px;
+  }
+  .history-left .kaigyou {
+    height: 33px;
+  }
+  .namae {
+    font-size: 14px;
+  }
+  .name {
+    font-size: 10px;
+    margin: 5px 0 10px 0;
   }
   .client {
     margin-top: 50px;
@@ -75,7 +106,19 @@
     margin: 100px 0;
   }
   .client-top .product {
-    margin: 5px 0 5px 3px;
+    font-size: 14px;
+    margin: 0;
+    border-left: none;
+    padding: 0;
+  }
+  .client-top .fontsize18 {
+    margin: 0 160px 0 0;
+  }
+  .client-top .tag {
+    margin: 5px 5px;
+    font-size: 11px;
+    padding: 0 1px 0 2px;
+    line-height: 15px;
   }
   .logoimg-list, .banner-list {
     -moz-column-gap: 10px;
@@ -95,9 +138,15 @@
     display: block;
     margin: 25px 0;
   }
+  .coment .fontsize12 {
+    margin: 5px 0;
+    font-size: 11px;
+  }
+  .time-skill {
+    width: 280px;
+  }
   .production {
     width: 350px;
-    margin-right: 10px;
   }
   .production-content {
     width: 350px;
@@ -121,14 +170,12 @@
   .app-img li:nth-child(4) img {
     margin: 0 10px 10px 0;
   }
-  .CD-img li:first-child { /*img全部に適用されちゃうのなぜ*/ }
   .CD-img li:first-child img {
     width: 365px;
   }
   .nengajyo-img li img {
     width: 245px;
   }
-  .nengajyo-img li:first-child { /*img全部に適用されちゃうのなぜ*/ }
   .nengajyo-img li:first-child img {
     margin-right: 0;
   }

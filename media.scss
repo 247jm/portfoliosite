@@ -11,11 +11,9 @@
   }
 
   .header{
-    // align-items: flex-start;
     a{
       font-size: vw(1100, 22);
     }
-    // margin: vw(1100,25) 0 vw(1100,50) 0;
   }
 
   .banner-box{
@@ -37,38 +35,14 @@
     height: vw(1100, 247);
   }
 
-  // h1{
-  //   font-size: vw(1099, 25);
-  // }
-
   .brp{
     display: block;
   }
-
-  // .nav-banner, .nav-UIdesign, .nav-illust{
-  //   margin-bottom: vw(1100,50);
-  //   li{
-  //     width: vw(1100, 100);
-  //     margin-right: vw(1100,20);
-  //     a{
-  //       font-size: vw(1100, 16);
-  //     }
-  //   }
-  // }
-
-  // .icon-box img{
-  //   width: vw(1100, 100);
-  //   height:  vw(1100, 100);
-  // }
 
   .icon-box, .app-img, .CD-img{
     img{
       margin: 0 vw(1100,25) vw(1100,25) 0;
     }
-    // p{
-    //   margin: vw(1100,20)  0 vw(1100,10) 0;
-    //   font-size: vw(1100, 18);
-    // }
   }
 
   .app-img-box{
@@ -79,7 +53,6 @@
     margin: 0 auto;
     img{
       width: vw(1100,225);
-      // height: vw(1100,405);
     }
     li{
       &:nth-child(3){
@@ -90,17 +63,9 @@
     }
   }
 
-  // .app-box{
-  //   p{
-  //     margin: 0 0 vw(1100,100) 0;
-  //     font-size: vw(1100,18);
-  //   }
-  // }
-
   .CD-img{
     li{
-      // margin:0 vw(1100,25) vw(1100,20) 0;
-      &:first-child{ /*img全部に適用されちゃうのなぜ*/
+      &:first-child{
         img{
           width: vw(1100,525);
         }
@@ -110,19 +75,8 @@
           height: vw(1100,399);
         }
       }
-      // &:nth-child(2){
-      //   img{
-      //     width: 600px;
-      //   }
-      // }
     }
   }
-
-  // .CD-box, .nengajyo-box, .birthday-box, .others-box{
-  //   p{
-  //     margin:0 0 vw(1100,75) 0;
-  //   }
-  // }
 
   .nengajyo-img{
     li{
@@ -161,9 +115,53 @@
   
   .fontsize18{
     margin: 5px 0;
+    font-size: 14px;
   }
 
+  .header-profile{
+    p{
+      font-size: 11px;
+    }
+  }
+
+  .pagetop{
+    right: 24px;
+    bottom: 24px;
+    height: 45px;
+    width: 45px;
+  }
+
+  .profile-box {
+    margin-top: 50px;
+  }
+
+  .profile-img{
+    img{
+      margin-bottom: 15px;
+    }
+    p{
+      font-size: 11px;
+    }
+    .history-box, .skil-box, .contact-box {
+      margin-bottom: 25px;
+      margin-top: -10px;
+    }
+  }
+
+  .history-left{
+    .kaigyou{
+      height: 33px;
+    }
+  }
+
+  .namae {
+    font-size: 14px;
+  }
   
+  .name {
+    font-size: 10px;
+    margin: 5px 0 10px 0;
+  }
 
   .client {
     margin-top: 50px;
@@ -174,29 +172,24 @@
   }
 
   .client-top{
-    // display: flex;
-    // flex-wrap: wrap;
-    // align-items: center;
     .product{
-      // font-size: 18px;
-      // margin-left: 3px;
-      margin: 5px 0 5px 3px;
-      // border-left:1px solid #cccccc;
-      // padding-left: 10px;
+      font-size: 14px;
+      margin: 0;
+      border-left:none;
+      padding: 0;
     }
-    // .tag{
-    //   border: 1px solid #cccccc;
-    //   color: #000;
-    //   background-color: #fff;
-    //   margin-left: 20px;
-    //   font-size: 12px;
-    //   line-height: 20px;
-    //   padding: 0 4px 0 5px;
-    // }
+    .fontsize18{
+      margin: 0 160px 0 0;
+    }
+    .tag{
+      margin: 5px 5px;
+      font-size: 11px;
+      padding: 0 1px 0 2px;
+      line-height: 15px;
+    }
   }
 
   .logoimg-list, .banner-list{
-    // justify-content: center;
     column-gap: 10px;
     li{
       width: 168px;
@@ -214,11 +207,18 @@
   .coment{
     display: block;
     margin: 25px 0;
+    .fontsize12{
+      margin: 5px 0;
+      font-size: 11px;
+    }
+  }
+
+  .time-skill {
+    width: 280px;
   }
 
   .production {
     width: 350px;
-    margin-right: 10px;
   }
 
   .production-content {
@@ -237,21 +237,6 @@
     width: 310px;
   }
 
-
-  // .icon-box, .CD-img{
-  //   p{
-  //     font-size: 15px;
-  //     margin: 0 0 10px 0;
-  //   }
-  // }
-
-  // .app-box{
-  //   p{
-  //     font-size: 15px;
-  //     margin: 0 0 100px 0;
-  //   }
-  // }
-
   .app-img{
     margin: 0%;
     img{
@@ -267,15 +252,9 @@
     }
   }
 
-  // .CD-img, .nengajyo-img, .birthday-img, .others-img{
-  //   li img{
-  //     width: 370px;
-  //   }
-  // }
-
   .CD-img{
     li{
-      &:first-child{ /*img全部に適用されちゃうのなぜ*/
+      &:first-child{
         img{
           width: 365px;
         }
@@ -288,7 +267,7 @@
       img{
         width: 245px;
       }
-      &:first-child{ /*img全部に適用されちゃうのなぜ*/
+      &:first-child{
         img{
           margin-right: 0;
         }
@@ -303,6 +282,5 @@
      }
     }
   }
-
 
 }
