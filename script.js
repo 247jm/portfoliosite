@@ -265,6 +265,4 @@ document.addEventListener("DOMContentLoaded", function () {
   // リストに追加
   client16List.innerHTML = listHTML16; // 1回だけ innerHTML16 を使って挿入
 
-
-
 });
