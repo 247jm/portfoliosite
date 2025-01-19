@@ -312,6 +312,10 @@ footer p {
   flex-wrap: wrap;
 }
 
+.time-skill {
+  overflow-wrap: break-word;
+}
+
 .production-content {
   width: 528px;
   padding: 0;
