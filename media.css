@@ -224,11 +224,11 @@
     width: 365px;
   }
   .web-img-display li:first-child img {
-    width: 350px;
-    margin: 0;
+    width: 258px;
+    margin: 0 10px 20px 0;
   }
   .web-img-display li:nth-child(2) img {
-    height: 145px;
+    height: 142px;
   }
   .web-img-all li:first-child img {
     width: 350px;
