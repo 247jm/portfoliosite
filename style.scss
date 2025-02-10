@@ -67,6 +67,7 @@ a{
   left: 0;
   background-color: white;
   width: 100%;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.04);
 }
 
 .header-box{
@@ -75,7 +76,7 @@ a{
 }
 
 .header{
-  height: 60px;
+  height: 100px;
   padding: 20px 60px;
   display: flex;
   flex-wrap: wrap;
@@ -93,6 +94,7 @@ a{
   p{
     margin: 0;
     padding: 0;
+    line-height: 3px;
   }
 
   .home{
@@ -100,11 +102,32 @@ a{
       color: #cccccc;
     }
   }
+
+  .maologo{
+    width: 220px;
+  }
+
+  .header_right{
+    display: flex;
+    // align-items: center
+    a{
+      margin-right: 50px;
+      padding-left: 15px;
+      border-left:1px solid #cccccc;
+      height: 7px;
+
+
+      // :hover{
+      //   border-left:1px solid #cccccc;
+      // }
+    }
+  }
   
   .header-profile{
      text-decoration: none;
      font-family: "Noto Sans JP", serif;
-     margin:5px 0 0 0 ;
+    //  margin:5px 0 0 0 ;
+     margin: 0 ;
      position: relative;
 
      :hover{
@@ -178,8 +201,14 @@ a{
 }
 
 .name-box{
+  // display: flex;
   width: 529px;
   margin: 0 auto;
+
+  .maologo_02{
+    width: 300px;
+    margin: 100px 0 50px 0;
+  }
 }
 .namae{
   text-align: center;

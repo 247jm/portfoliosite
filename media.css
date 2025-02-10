@@ -1,13 +1,19 @@
 @media (max-width: 1100px) and (min-width: 799px) {
   .container, .header-box {
     width: 72.7272727273vw;
-    padding-bottom: 15px;
   }
   .header {
-    align-items: end;
+    align-items: center;
+    height: 70px;
   }
   .header a {
     font-size: 2vw;
+  }
+  .header .maologo {
+    width: 20vw;
+  }
+  .time-skill {
+    width: 11.8181818182vw;
   }
   .banner-box {
     margin-bottom: 75px;
@@ -59,6 +65,27 @@
   .nengajyo-img li img, .birthday-img li img, .others-img li img {
     margin: 0 2.2727272727vw 1.8181818182vw 0;
   }
+  .web-img-display img, .web-img-all img {
+    margin: 0 2.2727272727vw 20px 0;
+  }
+  .web-img-display li:first-child img {
+    width: 50.5454545455vw;
+    height: auto;
+  }
+  .web-img-display li:nth-child(2) img {
+    width: auto;
+    height: 18.1818181818vw;
+    margin-right: 0;
+  }
+  .web-img-all li:first-child img {
+    width: 52.3636363636vw;
+    height: auto;
+  }
+  .web-img-all li:nth-child(2) img {
+    width: 34.0909090909vw;
+    height: auto;
+    margin-right: 0;
+  }
 }
 @media (max-width: 800px) {
   .container, .header-box {
@@ -69,9 +96,13 @@
   }
   .header {
     align-items: end;
+    height: 70px;
   }
   .header a {
     font-size: 14px;
+  }
+  .header .maologo {
+    width: 155px;
   }
   .fontsize18 {
     margin: 5px 0;
@@ -191,5 +222,17 @@
   }
   .birthday-img li img, .others-img li img {
     width: 365px;
+  }
+  .web-img-display li:first-child img {
+    width: 455px;
+  }
+  .web-img-display li:nth-child(2) img {
+    height: 145px;
+  }
+  .web-img-all li:first-child img {
+    width: 420px;
+  }
+  .web-img-all li:nth-child(2) img {
+    width: 270px;
   }
 }/*# sourceMappingURL=media.css.map */
